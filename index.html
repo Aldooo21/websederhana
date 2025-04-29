@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>richmarket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/179qg1.jpg">
+    <canvas id="trail"></canvas>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Store 🚀</h1>
+    <p>Panel Bot WA | Aplikasi Premium | Script Bot WA</p>
+</header>
+
+<nav class="menu-box">
+    <div class="menu-item" onclick="showSection('panel')">
+        <h2>Panel Bot WA</h2>
+        <p>Kelola bot WhatsApp kamu dengan mudah</p>
+    </div>
+    <div class="menu-item" onclick="showSection('aplikasi')">
+        <h2>Aplikasi Premium</h2>
+        <p>Software premium pilihan terbaik</p>
+    </div>
+    <div class="menu-item" onclick="showSection('script')">
+        <h2>Script Bot WA</h2>
+        <p>Kumpulan script bot WhatsApp keren</p>
+    </div>
+</nav>
+
+<main>
+    <section id="panel" class="product-section">
+        <div class="section-header">
+            <h2>Panel Bot WA</h2>
+            <button class="detail-btn" onclick="showProducts('panel')">Lihat Detail</button>
+        </div>
+        <div class="product-list" id="panel-products"></div>
+    </section>
+
+    <section id="aplikasi" class="product-section">
+        <div class="section-header">
+            <h2>Aplikasi Premium</h2>
+            <button class="detail-btn" onclick="showProducts('aplikasi')">Lihat Detail</button>
+        </div>
+        <div class="product-list" id="aplikasi-products"></div>
+    </section>
+
+    <section id="script" class="product-section">
+        <div class="section-header">
+            <h2>Script Bot WA</h2>
+            <button class="detail-btn" onclick="showProducts('script')">Lihat Detail</button>
+        </div>
+        <div class="product-list" id="script-products"></div>
+    </section>
+</main>
+
+<!-- Floating Customer Service -->
+<div class="floating-container">
+    <div class="floating-button" onclick="toggleMenu()">💬</div>
+    <div class="element-container">
+        <a href="https://instagram.com/akunmu" target="_blank" class="float-element instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/nomormu" target="_blank" class="float-element whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://chat.whatsapp.com/grupmu" target="_blank" class="float-element group">
+            <i class="fas fa-users"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Music Control -->
+<div id="music-control">
+    <i id="music-icon" class="fas fa-music"></i>
+</div>
+
+<!-- Audio -->
+<audio id="background-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-epic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<footer>
+    <p>&copy; 2025 My Store. Richmarket.id</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
